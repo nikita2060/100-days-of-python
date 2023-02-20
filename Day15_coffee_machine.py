@@ -100,7 +100,8 @@ while on:
     user_choice = get_user_choice()
     if user_choice == "report":
         print(report())
-
+    elif user_choice =="off":
+        on=0
     else:
         sufficient_resource(user_choice)
         user_money = process_coins()
