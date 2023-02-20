@@ -55,12 +55,14 @@ def report():
 
 # TODO :2.Check resources are sufficient or not
 def sufficient_resource(user_choice):
-    """Checks resource is sufficient or not and prints the problem"""
+    """returns true if resource is sufficient else returns false and prints the problem"""
     global ingredients
     for i in ingredients:
         if resources[i] < MENU[f"{user_choice}"]["ingredients"][f"{i}"]:
             print(f"Sorry,{i} is insufficient\n")
-            break
+            return False
+        else:
+            return True
 
 
 # TODO :3.Process coins
@@ -75,8 +77,8 @@ def process_coins():
 
 
 # TODO :4.Check transaction successful or not
-def check_transaction(drink_cost, user_money):
-    """takes cost of drink and profit(updates profit) ,if money is not sufficient refund it ,if more than required
+def check_transaction_is_successful(drink_cost, user_money):
+    """returns true if transaction is successful,takes cost of drink and profit(updates profit) ,if money is not sufficient refund it ,if more than required
     then offer change"""
     if drink_cost <= user_money:
         change = round(user_money - drink_cost, 2)
@@ -84,8 +86,10 @@ def check_transaction(drink_cost, user_money):
         profit += drink_cost
         if change != 0.00:
             print(f"Here is ${change} in change.")
+        return True
     else:
         print("Sorry that's not enough money. Money refunded.")
+        return False
 
 
 # TODO :5.Make coffee and deduct quantities
@@ -100,12 +104,12 @@ while on:
     user_choice = get_user_choice()
     if user_choice == "report":
         print(report())
-    elif user_choice =="off":
-        on=0
+    elif user_choice == "off":
+        on = 0
     else:
-        sufficient_resource(user_choice)
-        user_money = process_coins()
-        check_transaction(MENU[f"{user_choice}"]["cost"], user_money)
-        deduct_quantities(user_choice)
-        print(f"Here is your {user_choice} ☕️. Enjoy!")
+        if sufficient_resource(user_choice):
+            user_money = process_coins()
+            if check_transaction_is_successful(MENU[f"{user_choice}"]["cost"], user_money):
+                deduct_quantities(user_choice)
+                print(f"Here is your {user_choice} ☕️. Enjoy!")
 
