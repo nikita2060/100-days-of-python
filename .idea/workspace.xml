@@ -5,15 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2b1385e-6eb2-4cdd-9e06-a7c853cd3f16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Day16_OOP_start/coffee_maker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day16_OOP_start/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day16_OOP_start/menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day16_OOP_start/money_machine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day17_creating_class/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day17_creating_class/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day17_creating_class/question_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day17_creating_class/quiz_brain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,11 +41,12 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/nikita pandey/Documents/100-days-of-python/nikita"
+    "last_opened_file_path": "C:/Users/nikita pandey/Documents/100-days-of-python/Day17_creating_class"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nikita pandey\Documents\100-days-of-python\Day17_creating_class" />
       <recent name="C:\Users\nikita pandey\Documents\100-days-of-python\nikita" />
       <recent name="C:\Users\nikita pandey\Documents\100-days-of-python\Day16_OOP_start" />
     </key>
