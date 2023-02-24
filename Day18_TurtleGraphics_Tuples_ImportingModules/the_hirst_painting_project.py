@@ -26,13 +26,19 @@ def even():
     my_turtle.right(90)
 
 
+#  taking turtle to the lower part of screen so that drawing can be seen properly
+my_turtle.setheading(185)
+my_turtle.penup()
+my_turtle.forward(80)
+my_turtle.setheading(0)
+
 line = 1
 for _ in range(10):
-    for _ in range(15):
-        my_turtle.dot(10, random_color())
+    for _ in range(9):
+        my_turtle.dot(15, random_color())
         my_turtle.penup()
-        my_turtle.forward(30)
-        my_turtle.dot(10, random_color())
+        my_turtle.forward(40)
+        my_turtle.dot(15, random_color())
 
     if line % 2 == 0:
         even()
