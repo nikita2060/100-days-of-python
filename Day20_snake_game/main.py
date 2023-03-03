@@ -11,6 +11,9 @@ LEFT_BORDER = -RIGHT_BORDER
 UP_BORDER = SCREEN_HEIGHT / 2
 DOWN_BORDER = -UP_BORDER
 BUFFER_BORDER = 10
+INITIAL_SLEEP_TIME = 0.3
+MIN_SLEEP_TIME = 0.04
+INCREASE_SPEED_RATE = 0.05
 
 screen = Screen()
 screen.setup(width=SCREEN_WIDTH, height=SCREEN_HEIGHT)
@@ -30,10 +33,12 @@ scoreboard = Scoreboard()
 scoreboard.display(score)
 # displaying scoreboard
 game_is_on = True
+current_sleep_time = INITIAL_SLEEP_TIME
+
 while game_is_on:
     screen.update()
     snake.move()
-    time.sleep(0.1)  # it helps to slow down the movement else snake will move too fast and won't be seen. I had
+    time.sleep(current_sleep_time)  # it helps to slow down the movement else snake will move too fast and won't be seen. I had
     # tried but the snake moved too fast
 
     # Detect collision with food
@@ -42,6 +47,9 @@ while game_is_on:
         food.random_position()
         scoreboard.clear()
         score += 1
+        if current_sleep_time > MIN_SLEEP_TIME:
+            current_sleep_time -= INCREASE_SPEED_RATE
+            INCREASE_SPEED_RATE = max(INCREASE_SPEED_RATE - 0.006, 0.01)
         scoreboard.display(score)
 
     # detect collision with wall

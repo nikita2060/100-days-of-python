@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2b1385e-6eb2-4cdd-9e06-a7c853cd3f16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Day20_snake_game/food.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day20_snake_game/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day20_snake_game/scoreboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day20_snake_game/snake.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day20_snake_game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day20_snake_game/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,13 +34,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/nikita pandey/Documents/100-days-of-python"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nikita pandey/Documents/100-days-of-python&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nikita pandey\Documents\100-days-of-python\Day17_creating_class" />
