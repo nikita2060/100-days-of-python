@@ -1,4 +1,5 @@
 from turtle import Turtle
+
 ALIGNMENT = "center"
 FONT = ("Courier", 15, "normal")
 
@@ -15,8 +16,7 @@ class Scoreboard(Turtle):
         self.write(arg=f"Score : {score} ", align=ALIGNMENT, font=FONT)
         # move parameter in this function moves the text to the right each time it is called.That's why I was not
         # getting expected results thus I removed it
+
     def game_over(self):
-        self.goto(0,0)
+        self.goto(0, 0)
         self.write(arg="GAME OVER!!!!!", align=ALIGNMENT, font=FONT)
-
-

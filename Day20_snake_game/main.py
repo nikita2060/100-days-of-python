@@ -38,8 +38,8 @@ current_sleep_time = INITIAL_SLEEP_TIME
 while game_is_on:
     screen.update()
     snake.move()
-    time.sleep(current_sleep_time)  # it helps to slow down the movement else snake will move too fast and won't be seen. I had
-    # tried but the snake moved too fast
+    time.sleep(current_sleep_time)  # it helps to slow down the movement else snake will move too fast and won't be
+    # seen. I had tried but the snake moved too fast
 
     # Detect collision with food
     if snake.snake[0].distance(food) < 15:
@@ -53,8 +53,7 @@ while game_is_on:
         scoreboard.display(score)
 
     # detect collision with wall
-    if snake.snake[0].xcor() > RIGHT_BORDER - BUFFER_BORDER or snake.snake[0].xcor() < LEFT_BORDER - BUFFER_BORDER or \
-            snake.snake[0].ycor() > UP_BORDER - BUFFER_BORDER or snake.snake[0].ycor() < DOWN_BORDER - BUFFER_BORDER:
+    if snake.snake[0].xcor() > RIGHT_BORDER - BUFFER_BORDER or snake.snake[0].xcor() < LEFT_BORDER - BUFFER_BORDER or snake.snake[0].ycor() > UP_BORDER - BUFFER_BORDER or snake.snake[0].ycor() < DOWN_BORDER - BUFFER_BORDER:
         game_is_on = False
         scoreboard.game_over()
 

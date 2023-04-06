@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2b1385e-6eb2-4cdd-9e06-a7c853cd3f16" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Day22_pong_game/ball.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day22_pong_game/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day22_pong_game/paddle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day22_pong_game/scoreboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day20_snake_game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day20_snake_game/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day20_snake_game/scoreboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day20_snake_game/scoreboard.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,5 +66,16 @@
       <updated>1677000996501</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Day20_snake_game/food.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
