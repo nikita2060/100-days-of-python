@@ -5,39 +5,43 @@ UP = 90
 DOWN = 270
 LEFT = 180
 RIGHT = 0
+STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 
 
 class Snake:
     def __init__(self):
-        self.snake = []
+        self.snake = []  # in python, we can create list of objects and this list is list of turtle objects
         self.create_snake_body()
         self.last_position = ()
 
     def create_snake_body(self):
-
-        #  creating snake body
-        for i in range(0, -2, -1):  # previously I arranged them at x=0,20,40 but since we need to move forward in
-            # positive direction for implementing input directions so x=0,-20,-40 in this way head moves first in
-            # positive direction . I also tried moving backwards but input was being implemented in opposite direction.
+        for position in STARTING_POSITIONS:
             block = Turtle("square")
             block.color("white")
             block.penup()
-            block.setposition(x=i * 20, y=0)
+            block.setposition(position)
             self.snake.append(block)
 
+    def reset_snake(self):
+        for segment in self.snake:
+            segment.goto(1000, 1000)
+        self.snake.clear()
+        self.create_snake_body()
+
     def increase_snake_body(self):
-        # self.tail += 1
         block = Turtle("square")
         block.color("white")
         block.penup()
-        self.last_position = self.snake[-1].position()
+        self.last_position = self.snake[-1].position()  # returns position as tuple(x,y)
         block.goto(self.last_position)
         self.snake.append(block)
 
     def move(self):
-        for block in range(len(self.snake) - 1, 0,-1):  # it will run loop for block in last index and second last index
+
+        for block in range(len(self.snake) - 1, 0, -1):  # it will run loop for block in last index and second lastindex
             # i.e.block =2 then 1
-            new_x_cor = self.snake[block - 1].xcor()
+            new_x_cor = self.snake[block - 1].xcor()  # it gives x coordinate of previous block i.e if present index is
+            # 1 then snake[1-1] i.e snake[0].xcor
             new_y_cor = self.snake[block - 1].ycor()
             self.snake[block].goto(new_x_cor, new_y_cor)
 
