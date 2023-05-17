@@ -58,11 +58,10 @@ def sufficient_resource(user_choice):
     """returns true if resource is sufficient else returns false and prints the problem"""
     global ingredients
     for i in ingredients:
-        if resources[i] < MENU[f"{user_choice}"]["ingredients"][f"{i}"]:
+        if resources[i] < MENU[f"{user_choice}"]["ingredients"][str(i)]:
             print(f"Sorry,{i} is insufficient\n")
             return False
-        else:
-            return True
+    return True
 
 
 # TODO :3.Process coins
