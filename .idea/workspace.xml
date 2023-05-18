@@ -5,20 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2b1385e-6eb2-4cdd-9e06-a7c853cd3f16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Day20_snake_game/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day24_Reading_Writing_to_file/letter.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day24_Reading_Writing_to_file/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day24_Reading_Writing_to_file/names.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day24_Reading_Writing_to_file/new.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snake_game_practise/class_lab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snake_game_practise/food.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snake_game_practise/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snake_game_practise/scoreboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snake_game_practise/snake.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day25_CSVfiles_and_Pandas/class.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day25_CSVfiles_and_Pandas/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day25_CSVfiles_and_Pandas/weather.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day26_List_comprehension/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day27_ktinker_args_kargs/kwargs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day27_ktinker_args_kargs/miles_to_km_converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/100-days-of-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/100-days-of-python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15_coffee_machine.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day15_coffee_machine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day20_snake_game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day20_snake_game/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day20_snake_game/scoreboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day20_snake_game/scoreboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day20_snake_game/snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day20_snake_game/snake.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +50,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nikita pandey/Documents/100-days-of-python&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nikita pandey/Desktop/weather.csv&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -63,6 +61,9 @@
       <recent name="C:\Users\nikita pandey\Documents\100-days-of-python\Day16_OOP_start" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nikita pandey\Documents\100-days-of-python\Day28_tkinter_DynamicTyping_PomodorGUI" />
+      <recent name="C:\Users\nikita pandey\Documents\100-days-of-python\Day28_tkinter_DynamicTyping_PomodoroGUI" />
+      <recent name="C:\Users\nikita pandey\Documents\100-days-of-python\Day25_CSVfiles_and_Pandas" />
       <recent name="C:\Users\nikita pandey\Documents\100-days-of-python\Day23_TurtleCrossingGame" />
       <recent name="C:\Users\nikita pandey\Documents\100-days-of-python" />
     </key>
@@ -77,16 +78,5 @@
       <updated>1677000996501</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Day20_snake_game/food.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

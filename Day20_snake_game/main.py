@@ -11,7 +11,7 @@ LEFT_BORDER = -RIGHT_BORDER
 UP_BORDER = SCREEN_HEIGHT / 2
 DOWN_BORDER = -UP_BORDER
 BUFFER_BORDER = 10
-SLEEP_TIME = 0.07  # Kept this value after experimenting on screen
+SLEEP_TIME = 0.1  # Kept this value after experimenting on screen
 
 screen = Screen()
 screen.setup(width=SCREEN_WIDTH, height=SCREEN_HEIGHT)
