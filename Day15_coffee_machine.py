@@ -61,9 +61,7 @@ def sufficient_resource(user_choice):
         if resources[i] < MENU[f"{user_choice}"]["ingredients"][str(i)]:
             print(f"Sorry,{i} is insufficient\n")
             return False
-    else:  # Here else is for FOR loop as if it is written with is statement it will return ture if one ingredient is
-        # sufficient without checking next one
-        return True
+    return True
 
 
 # TODO :3.Process coins
