@@ -1,27 +1,32 @@
-#Password Generator Project
+# Password Generator Project
 import random
-letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+import string
+
+
+def generate_password(num_letters, num_symbols, num_numbers, strength='medium'):
+    """Generate a random password with the given number of letters, symbols, and numbers, and specified strength."""
+    password_chars = []
+    password_chars.extend(random.choices(
+        string.ascii_lowercase, k=num_letters))
+
+    if strength == 'medium' or strength == 'hard':
+        password_chars.extend(random.choices(
+            string.ascii_uppercase, k=num_letters//2))
+    if strength == 'hard':
+        password_chars.extend(random.choices(string.digits, k=num_numbers//2))
+
+    password_chars.extend(random.choices(string.punctuation, k=num_symbols))
+
+    random.shuffle(password_chars)
+    return ''.join(password_chars)
+
 
 print("Welcome to the PyPassword Generator!")
-nr_letters= int(input("How many letters would you like in your password?\n")) 
-nr_symbols = int(input(f"How many symbols would you like?\n"))
-nr_numbers = int(input(f"How many numbers would you like?\n"))
+num_letters = int(input("How many letters would you like in your password?\n"))
+num_symbols = int(input(f"How many symbols would you like?\n"))
+num_numbers = int(input(f"How many numbers would you like?\n"))
+strength = input(
+    "What strength of password would you like? (weak/medium/hard)\n")
 
-password=[]
-password2=""
-for letter in range(1,nr_letters+1):
-  character=random.choice(letters)
-  password.append(character)
-for number in range(1,nr_numbers+1):
-  character=random.choice(numbers)
-  password.append(character)
-for symbol in range(1,nr_symbols+1):
-  character=random.choice(symbols)
-  password.append(character)
-random.shuffle(password)
-for character in password:
-  password2 += character
-print(password2)
-
+password = generate_password(num_letters, num_symbols, num_numbers, strength)
+print(f"Your password is: {password}")
