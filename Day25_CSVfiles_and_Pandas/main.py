@@ -1,8 +1,11 @@
+#import pandas as pd
+# import csv  # in python, there is a library for working with csv files as python is very useful in data related fields
+
 # with open("weather.csv") as file:
 #     weather_list = file.readlines()
 #     print(weather_list)
 
-# import csv  # in python, there is a library for working with csv files as python is very useful in data related fields
+
 # with open("weather.csv") as file:
 #     weather_list = csv.reader(file)
 #     temperature = []
@@ -13,5 +16,3 @@
 #
 #     print(temperature)
 
-import pandas as pd
-pandas
